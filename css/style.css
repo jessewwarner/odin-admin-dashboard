@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-links img {
+    height: 24px;
+    width: 24px;
+}
+
+.project-icon-bar img {
+    height: 20px;
+    width: 20px;
+}
+
+.dashboard-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.search-icon,
+.notification-icon-on,
+.notification-icon-off {
+    height: 28px;
+    width: 28px;
+}
+
+.notification-icon-on {
+    src: url("../images/icons/notifications-active-svgrepo-com.svg");
+}
+
+.notification-icon-off {
+    src: url("../images/icons/notification-off-svgrepo-com.svg");
+}
+
+.profile-pic {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.info-logo {
+    height: 64px;
+    width: 64px;
+}
+
+.greeting-logo {
+    height: 96px;
+    width: 96px;
+}
