@@ -4,6 +4,41 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-bg-color: #e3d7c1;
+    --header-bg-color: #f2e198;
+    --sidebar-bg-color: #e7ca93;
+    --card-bg-color: #fffcb1;
+}
+
+.dark-mode {
+    --main-bg-color: #35475f;
+    --header-bg-color: #161b36;
+    --sidebar-bg-color: #0b1026;
+    --card-bg-color: #242b4b;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 220px;
+    grid-template-rows: 120px 1fr;
+    background-color: var(--main-bg-color);
+}
+
+header {
+    background-color: var(--header-bg-color);
+}
+
+.sidebar-container {
+    background-color: var(--sidebar-bg-color);
+}
+
+.project-card,
+.announcements-container,
+.trending-container {
+    background-color: var(--card-bg-color);
+}
+
 .nav-links img {
     height: 24px;
     width: 24px;
