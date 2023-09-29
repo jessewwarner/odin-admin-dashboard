@@ -1,4 +1,5 @@
-modeBtn = document.querySelector('.mode-btn');
+const modeBtn = document.querySelector('.mode-btn');
+const notifyBtn = document.querySelector('.notify-btn');
 
 function toggleMode() {
     const icon = document.querySelector('.mode-icon');
@@ -16,8 +17,15 @@ function toggleMode() {
     }
 
     document.body.classList.toggle('dark-mode');
-  }
+}
 
-modeBtn.addEventListener('click', (e) => {
-    toggleMode();
-});
+function toggleNotifications() {
+    const a = document.querySelector('.notify-icon');
+    a.classList.toggle('fa-bell');
+    a.classList.toggle('fa-regular');
+    a.classList.toggle('fa-bell-slash');
+}
+
+modeBtn.addEventListener('click', toggleMode);  
+
+notifyBtn.addEventListener('click', toggleNotifications);
